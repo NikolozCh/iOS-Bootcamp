@@ -30,7 +30,7 @@ struct GPAGrader {
 
 class Student {
     struct Grade {
-        let subjectName: String
+        let subjectName: University.Subject
         @StudentGrader var activityGrade: Double
         @StudentGrader var midtermGrade: Double
         @StudentGrader var finalExamGrade: Double
@@ -42,4 +42,15 @@ class Student {
     let admissionYear: Int
     let gradesArray: [Grade]
     @GPAGrader var GPA: Double
+    
+    init(name: String, surname: String, ID: String, faculty: [University.Faculty], admissionYear: Int, gradesArray: [Grade], GPA: Double) {
+        self.name = name
+        self.surname = surname
+        self.ID = ID
+        self.faculty = faculty
+        self.admissionYear = admissionYear
+        self.gradesArray = gradesArray
+        self.GPA = GPA
+    }
 }
+

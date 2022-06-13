@@ -1,14 +1,14 @@
-import Foundation
-
-class University {
-    enum Faculty {
+// This file contains all the source for main class in order to work properly
+// Don't mind this file at all
+public class University {
+    public enum Faculty {
         case macs
         case business
         case civilEngineering
         case lawSchool
         case sport
     }
-    enum Subject {
+    public enum Subject {
         // Subject is associated with the university
         // So we declare it here
         case math
@@ -19,10 +19,4 @@ class University {
         case macroEconomics
         case history
     }
-    let name: String
-    let foundYear: Int
-    var studentsArray: [Student]
-    var lecturersArray: [Lecturer]
-    var facultiesArray: [Faculty]
-    
 }
