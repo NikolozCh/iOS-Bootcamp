@@ -25,4 +25,11 @@ class University {
     var lecturersArray: [Lecturer]
     var facultiesArray: [Faculty]
     
+    init(name: String, foundYear: Int, studentsArray: [Student], lecturersArray: [Lecturer], facultiesArray: [Faculty]) {
+        self.name = name
+        self.foundYear = foundYear
+        self.studentsArray = studentsArray
+        self.lecturersArray = lecturersArray
+        self.facultiesArray = facultiesArray
+    }
 }

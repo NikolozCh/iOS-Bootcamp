@@ -1,3 +1,5 @@
+// This file contains all the source for main class in order to work properly
+// Don't mind this file at all
 import Foundation
 
 public class University {

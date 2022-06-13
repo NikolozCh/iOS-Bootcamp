@@ -1,6 +1,6 @@
-import Foundation
-
-class Lecturer {
+// This file contains all the source for main class in order to work properly
+// Don't mind this file at all
+public class Lecturer {
     struct Lecture {
         let subject: University.Subject
         let faculty: University.Faculty
@@ -28,12 +28,3 @@ class Lecturer {
         self.timetable = timetable
     }
 }
-
-let abstractionsLecture = Lecturer.Lecture(subject: .programmingAbstractions, faculty: .macs, startDate: "21:00", endDate: "23:00", roomNumber: "200")
-let weekdays = Lecturer.Weekday(lectures: [abstractionsLecture])
-let timetable = Lecturer.Timetable(weekDays: [weekdays])
-
-
-let iosLecturer = Lecturer(name: "Vasili", surname: "Baramidze", faculty: .macs, subjectsTeaching: [.programmingAbstractions, .math], timetable: timetable)
-
-print(iosLecturer)
