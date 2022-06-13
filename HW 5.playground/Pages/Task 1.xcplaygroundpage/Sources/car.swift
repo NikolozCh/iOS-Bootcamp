@@ -1,4 +1,3 @@
-// Class declaration goes here...
 import Foundation
 
 public struct FuelExpenses {
