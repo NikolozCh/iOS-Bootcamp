@@ -30,3 +30,4 @@ struct Player {
 let footballPlayer = Player(name: "gela", surname: "namoradze")
 print(footballPlayer.toString())
 
+

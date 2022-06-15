@@ -3,5 +3,7 @@
     <pages>
         <page name='Computed Properties'/>
         <page name='Property Wrapper'/>
+        <page name='Access Control'/>
+        <page name='Extensions'/>
     </pages>
 </playground>
