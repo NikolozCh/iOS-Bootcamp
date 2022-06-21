@@ -9,6 +9,7 @@ public class Player {
     public init(name: String, salary: Int) {
         self.name = name
         self.salary = salary
+        self.clubName = "Dinamo"
     }    
 }
 
