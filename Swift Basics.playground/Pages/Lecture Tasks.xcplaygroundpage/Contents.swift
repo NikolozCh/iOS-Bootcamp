@@ -94,3 +94,8 @@ func myFilter(arr: [Int], someClosure: (Int) -> Bool) -> Int {
 }
 
 print(myFilter(arr: numbers) { $0 > 10 })
+
+let string: String = "Hello"
+print((0..<10).reduce("", {res, _ in
+  res + string
+}))
