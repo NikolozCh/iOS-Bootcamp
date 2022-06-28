@@ -110,8 +110,6 @@ someDict["DummyData"] = 20
 
 print(someDict.duplicatedValues)
 
-
-
 print(0.5.stringValue)
 
 var myName: String = "Nikolozi"

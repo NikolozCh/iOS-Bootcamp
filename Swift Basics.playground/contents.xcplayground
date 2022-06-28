@@ -5,9 +5,10 @@
         <page name='Property Wrapper'/>
         <page name='Access Control'/>
         <page name='Extensions'/>
-        <page name='Casual Coding'/>
         <page name='Inheritance'/>
         <page name='Protocols'/>
         <page name='Lecture Tasks'/>
+        <page name='Generics'/>
+        <page name='Typealiases'/>
     </pages>
 </playground>
