@@ -15,6 +15,7 @@
 		B354B82928737B1200435142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B354B82728737B1200435142 /* LaunchScreen.storyboard */; };
 		B354B83228737DEE00435142 /* HEYCAZpersonal.otf in Resources */ = {isa = PBXBuildFile; fileRef = B354B83128737DEE00435142 /* HEYCAZpersonal.otf */; };
 		B354B83428737E1000435142 /* Bouncy-PERSONAL_USE_ONLY.otf in Resources */ = {isa = PBXBuildFile; fileRef = B354B83328737E1000435142 /* Bouncy-PERSONAL_USE_ONLY.otf */; };
+		B354B836287384E600435142 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B354B835287384E600435142 /* SettingsScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B354B82A28737B1200435142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B354B83128737DEE00435142 /* HEYCAZpersonal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HEYCAZpersonal.otf; path = ../../../../../../Downloads/heycaz/HEYCAZpersonal.otf; sourceTree = "<group>"; };
 		B354B83328737E1000435142 /* Bouncy-PERSONAL_USE_ONLY.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Bouncy-PERSONAL_USE_ONLY.otf"; path = "../../../../../../Downloads/bouncy/Bouncy-PERSONAL_USE_ONLY.otf"; sourceTree = "<group>"; };
+		B354B835287384E600435142 /* SettingsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				B354B82528737B1200435142 /* Assets.xcassets */,
 				B354B82728737B1200435142 /* LaunchScreen.storyboard */,
 				B354B82A28737B1200435142 /* Info.plist */,
+				B354B835287384E600435142 /* SettingsScreen.storyboard */,
 			);
 			path = "NikolozChitasvhili(HW12)";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B354B82928737B1200435142 /* LaunchScreen.storyboard in Resources */,
+				B354B836287384E600435142 /* SettingsScreen.storyboard in Resources */,
 				B354B83428737E1000435142 /* Bouncy-PERSONAL_USE_ONLY.otf in Resources */,
 				B354B83228737DEE00435142 /* HEYCAZpersonal.otf in Resources */,
 				B354B82628737B1200435142 /* Assets.xcassets in Resources */,
