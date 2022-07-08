@@ -22,6 +22,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="UsD-50-5IQ"/>
                                     <constraint firstAttribute="width" constant="50" id="oHG-oo-13q"/>
+                                    <constraint firstAttribute="width" secondItem="cEU-wc-jhy" secondAttribute="height" multiplier="1:1" id="yvd-6P-W5d"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -30,8 +31,13 @@
                         <constraints>
                             <constraint firstItem="cEU-wc-jhy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1EO-tu-sCW"/>
                             <constraint firstItem="cEU-wc-jhy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aYV-xP-jhi"/>
+                            <constraint firstItem="cEU-wc-jhy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jL0-kN-qms"/>
+                            <constraint firstItem="cEU-wc-jhy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yqZ-6p-nhf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lop" destination="cEU-wc-jhy" id="6St-Y1-KNx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
