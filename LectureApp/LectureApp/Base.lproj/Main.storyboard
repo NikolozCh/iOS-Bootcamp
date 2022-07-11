@@ -15,29 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEU-wc-jhy">
-                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="UsD-50-5IQ"/>
-                                    <constraint firstAttribute="width" constant="50" id="oHG-oo-13q"/>
-                                    <constraint firstAttribute="width" secondItem="cEU-wc-jhy" secondAttribute="height" multiplier="1:1" id="yvd-6P-W5d"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                        <constraints>
-                            <constraint firstItem="cEU-wc-jhy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1EO-tu-sCW"/>
-                            <constraint firstItem="cEU-wc-jhy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aYV-xP-jhi"/>
-                            <constraint firstItem="cEU-wc-jhy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jL0-kN-qms"/>
-                            <constraint firstItem="cEU-wc-jhy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yqZ-6p-nhf"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="lop" destination="cEU-wc-jhy" id="6St-Y1-KNx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,9 +25,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
