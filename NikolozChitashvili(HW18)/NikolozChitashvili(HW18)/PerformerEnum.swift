@@ -10,4 +10,6 @@ import Foundation
 public enum Performer: String {
     case redCircle
     case blueCircle
+    case purpleTriangle
+    case blackTriangle
 }

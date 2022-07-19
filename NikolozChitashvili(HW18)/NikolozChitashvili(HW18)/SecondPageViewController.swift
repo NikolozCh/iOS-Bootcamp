@@ -17,7 +17,9 @@ class SecondPageViewController: UIViewController, UIGestureRecognizerDelegate {
     
     let texts = [
         "redCircle": "If you press this image less than 1 sec, you will go back where you came from!",
-        "blueCircle": "If you press this image for more than 1 sec, it will disappear"
+        "blueCircle": "If you press this image for more than 1 sec, it will disappear",
+        "purpleTriangle": "Swipe left, right, up or down and image will change accordingly",
+        "blackTriangle": "Try to pinch the image"
     ]
     
     var initializer: Performer?
@@ -50,6 +52,10 @@ class SecondPageViewController: UIViewController, UIGestureRecognizerDelegate {
                 setUpForRedCircle()
             case .blueCircle:
                 setUpForBlueCircle()
+            case .blackTriangle:
+                setUpBlackTriangle()
+            case .purpleTriangle:
+                setUpPurpleTriangle()
             default:
                 // do nothin
                 print("LOG", "Oppssssieee!!1")

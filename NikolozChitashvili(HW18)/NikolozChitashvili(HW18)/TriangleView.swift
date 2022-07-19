@@ -15,6 +15,8 @@ public class TriangleButtonView: UIButton {
     private let triangle = UIBezierPath()
     private(set) var buttonColor: UIColor
     
+    static let notificationChannel: String = "TriangleCall"
+    
     init(frame: CGRect, color: UIColor) {
         buttonColor = color
         super.init(frame: frame)
@@ -38,6 +40,10 @@ public class TriangleButtonView: UIButton {
         // This is for allow touches only in shape area.
         if triangle.contains(touches.first?.location(in: self) ?? .zero) {
             super.touchesBegan(touches, with: event)
+            
+            NotificationCenter.default.post(name: Notification.Name(rawValue: TriangleButtonView.notificationChannel), object: self)
+//            NotificationCenter.default.post(name: Notification.Name(TriangleButtonView.notificationChannel), object: self, userInfo: nil)
+            
             // or you can use send action
             // self.sendActions(for: .touchUpInside)
 //            print("Clicked")

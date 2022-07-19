@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         
         setRoundedCorners()
         drawRectangle()
+        setUpTriangleNotificationListeners()
     }
     
     @IBAction func redViewClicked(_ sender: Any) {
@@ -80,21 +81,22 @@ class ViewController: UIViewController {
         triangleViewSecond.addSubview(blackTR)
         blackTR.backgroundColor = .systemBackground
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first {
-            if let trView = touch.view as? UIButton {
-                print("No")
-                if trView == purpleTR {
-                    print("Purple")
-                }
-                else {
-                    print("Black")
-                }
-            }
-            print(touch.view)
-        }
+ 
+    private func setUpTriangleNotificationListeners() {
+        NotificationCenter.default.addObserver(self, selector: #selector(clickedOnTriangle), name: Notification.Name(rawValue: TriangleButtonView.notificationChannel), object: nil)
     }
     
+    @objc func clickedOnTriangle(_ notification: NSNotification) {
+        if let trView = notification.object as? TriangleButtonView {
+            let color = trView.buttonColor
+            if color == .purple {
+                seguePerformer = .purpleTriangle
+            }
+            else if color == .black {
+                seguePerformer = .blackTriangle
+            }
+            performSegue(withIdentifier: segueID, sender: self)
+        }
+    }
 }
 
