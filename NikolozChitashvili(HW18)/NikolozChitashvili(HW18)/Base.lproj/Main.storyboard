@@ -99,8 +99,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="terminal.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="w4S-mE-D4h">
-                                <rect key="frame" x="5" y="144" width="365" height="516.5"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7acc1584594b6fc6b914489e0278dd58" translatesAutoresizingMaskIntoConstraints="NO" id="w4S-mE-D4h">
+                                <rect key="frame" x="5" y="143" width="365" height="519"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kh2-ST-eGj">
                                 <rect key="frame" x="5" y="49" width="365" height="79"/>
@@ -154,7 +154,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="terminal.fill" catalog="system" width="128" height="93"/>
+        <image name="7acc1584594b6fc6b914489e0278dd58" width="540" height="960"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
