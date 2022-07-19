@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var seguePerformer: Performer?
+    let segueID: String = "nextPage"
+    
     @IBOutlet weak var redView: UIView!
     @IBOutlet weak var blueView: UIView!
     
@@ -20,13 +23,27 @@ class ViewController: UIViewController {
     }
     
     @IBAction func redViewClicked(_ sender: Any) {
-        performSegue(withIdentifier: "nextPage", sender: self)
+        seguePerformer = .redCircle
+        performSegue(withIdentifier: segueID, sender: self)
     }
     
     @IBAction func blueViewClicked(_ sender: Any) {
-        performSegue(withIdentifier: "nextPage", sender: self)
+        seguePerformer = .blueCircle
+        performSegue(withIdentifier: segueID, sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let id = segue.identifier
+        // make sure we are good
+        if id == segueID {
+            guard
+                let vc = segue.destination as? SecondPageViewController
+            else {
+                return
+            }
+            vc.initializer = self.seguePerformer
+        }
+    }
     
     private func setRoundedCorners() {
         setRounded(view: redView)
