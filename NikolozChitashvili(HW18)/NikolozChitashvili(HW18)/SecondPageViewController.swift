@@ -17,6 +17,7 @@ class SecondPageViewController: UIViewController, UIGestureRecognizerDelegate {
     var longPressedImage: Bool = false
     var isImageHidden: Bool = false
     var shouldGoBackWork: Bool = true
+    let moveBy: CGFloat = 50
     
     let texts = [
         "redCircle": "If you press this image less than 1 sec, you will go back where you came from!",
@@ -75,13 +76,44 @@ class SecondPageViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     private func setUpPurpleTriangle() {
-
+        shouldGoBackWork = false
+        setCorrectSize()
+        self.navigationItem.setHidesBackButton(false, animated: true)
+        let swpDwnGest = UISwipeGestureRecognizer(target: self, action: #selector(swipedDwnImage))
+        swpDwnGest.direction = .down
+        let swpUpGest = UISwipeGestureRecognizer(target: self, action: #selector(swipedUpImage))
+        swpUpGest.direction = .up
+        let swpLeftGest = UISwipeGestureRecognizer(target: self, action: #selector(swipedLeftImage))
+        swpLeftGest.direction = .left
+        let swpRightGest = UISwipeGestureRecognizer(target: self, action: #selector(swipedRightImage))
+        swpRightGest.direction = .right
+        imageView.addGestureRecognizer(swpDwnGest)
+        imageView.addGestureRecognizer(swpUpGest)
+        imageView.addGestureRecognizer(swpLeftGest)
+        imageView.addGestureRecognizer(swpRightGest)
+    }
+    
+    private func setCorrectSize() {
+        let scale = 0.7
+        // -- :)
+        imageView.transform = (imageView.transform.scaledBy(x: scale, y: scale))
+    }
+    
+    @objc private func swipedDwnImage(gesture: UIPinchGestureRecognizer) {
+        imageView.center.y += moveBy
+    }
+    @objc private func swipedUpImage(gesture: UIPinchGestureRecognizer) {
+        imageView.center.y -= moveBy
+    }
+    @objc private func swipedLeftImage(gesture: UIPinchGestureRecognizer) {
+        imageView.center.x -= moveBy
+    }
+    @objc private func swipedRightImage(gesture: UIPinchGestureRecognizer) {
+        imageView.center.x += moveBy
     }
     
     @objc private func pinchedImage(gesture: UIPinchGestureRecognizer) {
         if gesture.state == .ended {
-            print("Ended pinching")
-            
             if gesture.view?.frame.maxY ?? 0 > view.frame.height {
                 let startHeight = imageStartHeight ?? 0
                 // Some big calculus going on here
