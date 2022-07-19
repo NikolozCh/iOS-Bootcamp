@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
+    // ნელ ნელა იზრდება დავალების მოცულობააააა
+    
     var seguePerformer: Performer?
     let segueID: String = "nextPage"
     var purpleTR: TriangleButtonView? = nil
